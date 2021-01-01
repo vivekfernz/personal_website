@@ -56,6 +56,12 @@ button{
   font-style: bold;
   background-color: #494949;
   color: white;
+  transition: background-color 0.2s ease-in-out;
+}
+button:hover {
+  background-color: #DFDFDF;
+  cursor:pointer;
+  color: black;
 }
 dt{
   margin-right: 10%;
