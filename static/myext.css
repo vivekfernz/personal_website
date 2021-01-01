@@ -1,12 +1,16 @@
+html{
+  overflow-x: hidden;
+}
 body {
-  background-color:black;
+  width=100%;
+  overflow-x: hidden;
+  background-color: #E7E7E7;
   margin-top: 100px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 h1 {
-  background-color: skyblue;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -18,7 +22,8 @@ h1 {
 }
 
 h2 {
-  background-color: skyblue;
+  margin-left:10%;
+  margin-right: 10%;
   margin-top: 20px;
   margin-bottom: 10px;
   font-family: Averta, sans-serif;
@@ -29,19 +34,38 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
 }
-
 p {
-  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10px;
   font-family: Averta, sans-serif;
-  color: #fff;
+  color: white;
   font-size: 22px;
   line-height: 30px;
 }
 img{
-  text-align:center;
-  width: 256px;
-  height: 288px;
+  padding-top: 20px;
+  margin-left:12%;
+  margin-right: 10%;
+  width: 200px;
+  height: 230px;
   border-radius: 50%;
+}
+button{
+  font-size: 22px;
+  font-style: bold;
+  background-color: #494949;
+  color: white;
+}
+dt{
+  margin-right: 10%;
+  margin-left:10%;
+  font-size: 22px;
+}
+dd{
+  margin-right: 10%;
+  margin-left:12%;
+  font-size: 20px;
 }
 a {
   -webkit-transition: border-color 200ms ease, color 200ms ease;
@@ -70,3 +94,12 @@ a:focus {
   float: left;
   border-bottom: 0px none #000;
 }
+
+
+
+.row-full{
+width: 150vw;
+position: relative;
+margin-left: -60vw;
+left: 50%;
+background-color: #C6C6C6;

@@ -5,60 +5,74 @@
       <title>Vivek Fernandez</title>
     </head>
     <body>
-        <div>
-          <h1>Vivek Fernandez</h1>
-          <p style="text-align:center"><img src="{{ url_for('static', filename='images/propic.jpg') }}" alt="My picture"></p>
-          <p style="text-align:center">Hello! My name is Vivek Fernandez. I'm originally from New Jersey, but am currently
-          a student at UCLA pursuing a degree in Computer Science. In my free time, I love to sing and play basketball.</p>
+      <div>
+        <h1>Vivek Fernandez</h1>
       </div>
+        <div class="row-full">
+          <img align="left" src="{{ url_for('static', filename='images/propic.jpg') }}" alt="My picture"></img>
+          <h2 style="padding-top:30px;"><big> About me </big></h2>
+          <p style="width:58%;">Hello! My name is Vivek Fernandez. I'm originally from New Jersey, but am currently
+          a student at UCLA pursuing a degree in Computer Science. In my free time, I love to sing and play basketball. </p>
+          <p style="padding-bottom:50px"><button type="submit" onclick="window.open('static/Resume_Vivek_Fernandez.pdf')">Download Resume</button></p>
+      </div>
+
         <div>
-          <h2>Education</h2>
-          <p> University of California Los Angeles (09/2018 - 06/2022) </p>
-          <p><small> Bachelor of Science in Computer Science, Technical Breadth in Mechanical Engineering</small></p>
+          <h2 style="padding-top:70px">Education</h2>
+          <dl>
+          <dt> <b>University of California, Los Angeles </b><i>Sep 2018 - Jun 2022</i> </dt>
+          <dd> Bachelor of Science in Computer Science, Technical Breadth in Mechanical Engineering<dd>
+        </dl>
           </div>
           <div>
           <br>
           <h2>Work Experience</h2>
-          <p><b> Icuro </b>(07/2019 - 09/2019)</p>
-          <p><small><i> Data Analytics Intern </i></small></p>
-            <p><small>•Developed CAD models for prototypes of dumping mechanisms to be used in warehouses.</small></p>
-              <p><small>•Conducted research on data annotation tools to be used for image recognition within warehouse products.</small></p>
-            <p><small>•Presented research at a class held by the company for 20 individuals looking to get involved in technology.</small></p>
-          <p><b>New Jersey Turnpike Authority</b> (07/2018 - 08/2018)</p>
-          <p><small><i> Data Analyst Intern</small> </i></p>
-            <p><small>•Performed analysis and research of all reported revenue to ensure the accurate audit of a group of interchanges.</small></p>
-            <p><small>•Maintained and updated records in different time frames and prepared reports.</small></p>
-            <p><small>•Accounted for the work of missing employees to ensure records were up to date.</small></p>
+          <dl>
+            <dt><b>Icuro</b> Data Analytics Intern <i>Jul 2019 - Sep 2019</i></dt>
+            <dd>Developed CAD models for prototypes of dumping mechanisms to be used in warehouses.</b></dd>
+            <dd>Conducted research on data annotation tools to be used for image recognition within warehouse products.</b></dd>
+            <dd>Presented research at a class held by the company for 20 individuals looking to get involved in technology.</b></dd>
+            <br>
+          <dt><b>New Jersey Turnpike Authority</b> Data Analyst Intern <i>Jul 2018 - Aug 2018</i></dd>
+            <dd>Performed analysis and research of all reported revenue to ensure the accurate audit of a group of interchanges.</dd>
+            <dd>Maintained and updated records in different time frames and prepared reports.</dd>
+            <dd>Accounted for the work of missing employees to ensure records were up to date.</dd>
+          </dl>
             </div>
             <br>
             <div>
           <h2> Projects</h2>
-          <p><b> Chat Organizer </b> <i> C++</i> </p>
-          <p><small> Used vectors and hash tables to keep track of the chats a user was in, as well as how many contributions were made in that chat overall and by each user.</small></p>
-          <p><b> Dungeon Warrior </b> <i> C++</i> </p>
-          <p><small> Used polymorphism to implement various items and characters into a game, where a player must travel in a 2 dimensional dungeon and reach a trophy while fighting other monsters near it.</small></p>
+          <dl>
+          <dt><b> Chat Organizer </b> <i> C++</i> </dt>
+          <dd>Used vectors and hash tables to keep track of the chats a user was in, as well as how many contributions were made in that chat overall and by each user.</dd>
+          <br>
+          <dt><b> Dungeon Warrior </b> <i> C++</i> </dt>
+          <dd> Used polymorphism to implement various items and characters into a game, where a player must travel in a 2 dimensional dungeon and reach a trophy while fighting other monsters near it.</dd>
+        </dl>
           </div>
           <br>
           <div>
             <h2> Other Club Activities </h2>
-            <p><b> American Society of Mechanical Engineers </b></p>
-            <p><small> Built a battle bot for competition, leading the team in the CAD and design process.</small> </p>
-            <p><b> Unmanned Aerial Systems </b></p>
-            <p><small>Structured and 3D printed an unmanned group vehicle that traverses over a terrain while carrying a payload using Solidworks.</small></p>
-            <p><b> UCLA Naya Zamaana </b><i>Music Director</i></p>
-            <p><small> Arrange, teach, and finalize music to be performed at national competitions.</small></p>
+            <dl>
+            <dt><b> American Society of Mechanical Engineers </b><i> Sep 2019 - Jun 2019</i></dt>
+            <dd> Built a battle bot for competition, leading the team in the CAD and design process.</dd>
+            <br>
+            <dt><b> Unmanned Aerial Systems </b> <i> Sep 2018 - Jun 2018</i></dt>
+            <dd>Structured and 3D printed an unmanned group vehicle that traverses over a terrain while carrying a payload using Solidworks.</dd>
+            <br>
+            <dt><b> UCLA Naya Zamaana </b><i>Sep 2018 - Jun 2019</i></dt>
+            <dd> Arrange, teach, and finalize music to be performed at national competitions.</dd>
           </div>
 <br>
 <br>
-    <div style="background-color:gray">
-      <h2 style="background-color:gray">Contact Me!</h2>
+    <div class="row-full" style="padding-bottom:20px">
+      <h2>Contact Me!</h2>
       <p><small>7 Donald Ave</small></p>
       <p><small>Kendall Park, New Jersey, 08824</small></p>
       <p><small>732-991-4415</small></p>
       <p><small>vjf2018@gmail.com</small></p>
     </div>
 
-      <div class="social-icon">
+      <div class="social-icon" style="margin-left:50px">
               <a href="https://www.linkedin.com/in/vivekfernandez/">
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
                       <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill="currentColor" fill-rule="evenodd"></path>
